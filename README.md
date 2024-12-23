@@ -28,14 +28,22 @@ The diagram will be saved as a PNG image, and you can open it to visualize the A
 **Architecture Overview**
 This solution illustrates how AWS services interact for cost monitoring within AWS Control Tower:
 
-Control Tower: Manages AWS landing zones and governance across multiple AWS accounts.
+**Control Tower:** Manages AWS landing zones and governance across multiple AWS accounts.
+
 **Organizations**: Organizes AWS accounts into different Organizational Units (OUs) such as Development, Testing, and Production.
+
 **Cost and Usage Reports (CUR):** Collects detailed cost and usage data.
+
 **Cost Explorer:** Allows visualization and analysis of cost and usage data.
+
 **Cost Anomaly Detection:** Detects cost anomalies and triggers alerts.
+
 **SNS Topics: **Sends notifications for detected anomalies.
+
 **Lambda Functions:** Executes custom logic based on triggered alerts.
+
 **CloudWatch:** Monitors AWS resources and triggers actions based on defined metrics.
+
 **QuickSight:** Visualizes cost data in custom dashboards for easier analysis.
 
 **Diagram Flow**
